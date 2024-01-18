@@ -1,0 +1,1240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+video{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+.part1{
+    height: 100%;
+    width: 100%;
+}
+.bluer{
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(black,rgb(12, 11, 11),black);
+    position: relative;
+    top: 9em;
+    filter: blur(50px);
+    
+}
+
+nav{
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width:600px) {
+    nav{
+      display: block;
+      align-items: center;
+      text-align: center;
+      
+    }  
+
+    }
+nav >ul{
+    display: flex;
+    gap: 2em;
+    position: relative;
+    left: 12em;
+}
+@media only screen and (max-width:600px){
+    nav >ul{
+        position: relative;
+        left: 0.8em;
+        top: 1em;
+      }
+    
+}
+nav >ul >a{
+   text-decoration: none;
+   font-size: 1em;
+   font-family: sans-serif;
+   font-weight: 500;
+   color: rgba(0, 0, 0, 0.6);
+   
+}
+nav >ul >a:hover{
+    color: rgb(171, 42, 42);
+}
+nav >ul >button{
+    padding: 0.4em 1em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    bottom: 0.3em;
+    transition: all 1s ;
+}
+nav >ul >button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+}
+@media only screen and (max-width:600px){
+    nav >ul >button{
+        padding: 0.4em 0.5em;
+        
+    }
+    
+}
+nav >h1{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    right: 7.5em;
+    letter-spacing: 0.2em;
+}
+@media only screen and (max-width:600px){
+    nav >h1{
+    position: relative;
+    right: 0.2em;
+    }
+}
+ .heading{
+    height: 39vh;
+    width: 55vw;
+    background-color: transparent;
+    position: relative;
+    left: 18em;
+    top: 2em;
+}
+@media only screen and (max-width:600px){
+   .heading{
+        position: relative;
+        left: 4em;
+        top: 0em;
+        height: 48vh;
+        width: 67vw;
+        
+    }
+}
+.heading >h1{
+    font-size: 4em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3em;
+    
+}
+@media only screen and (max-width:600px){
+    .heading >h1{
+    font-size: 2.4em;
+        
+        
+    }
+}
+.heading >p{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 540;
+    text-align: center;
+    line-height: 2.8em;
+    color: wheat;
+}
+@media only screen and (max-width:600px){
+    .heading >p{
+        font-size: 1em;
+        line-height: 1.5em;
+        position: relative;
+        top: 1em;
+        
+    }
+} 
+ 
+.part2{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.line{
+    height: 83vh;
+    width: 0.1vw;
+    background-color: white;
+    position: relative;
+    top: 2em;
+    left: 5em;
+    
+}
+@media only screen and (max-width:600px){
+    .line{
+        height: 50vh;
+        position: relative;
+        left: 2em;
+    
+    }
+}
+
+.line2{
+    height: 70vh;
+    width: 3vw;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1.4em;
+    right: 1.1em;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+@media only screen and (max-width:600px){
+    .line2{
+        height: 40vh;
+        position: relative;
+        width: 9vw;
+    }
+}
+.line2::-webkit-scrollbar{
+    display: none;
+}
+.circle{
+    height: 3.6vh;
+    width: 2vw;
+    background: linear-gradient(blue,purple,violet,pink,orange);
+    border-radius: 50%;
+}
+@media only screen and (max-width:600px) {
+    .circle{
+        height: 4vh;
+        width: 2.5vw;
+    }
+}
+.circle >h6{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+@media only screen and (max-width:600px) {
+    .circle >h6{
+        font-size: 0.7em;
+    }
+}
+
+.vision{
+    height: 83vh;
+    width: 29vw;
+    background-color: transparent;
+    position: relative;
+    left: 8em;
+    top: 2em;
+    
+}
+@media only screen and (max-width:600px) {
+    .vision{
+        height: 50vh;
+        width: 84.6vw;
+        position: relative;
+        left: 3.5em;
+    }
+}
+
+.vision >h1{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .vision >h1{
+        font-size: 1em;
+    }
+}
+.vision >h2{
+   font-size: 2.2em;
+   font-family: sans-serif;
+   font-weight: 549;
+   position: relative;
+   top: 1em;
+   line-height: 1.3em;
+   color: white;
+}
+@media only screen and (max-width:600px) {
+    .vision >h2{
+        font-size: 1.5em;
+    }
+}
+.vision >p{
+    position: relative;
+    top: 4.6em;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .vision >p{
+        font-size: 0.8em;
+        position: relative;
+        top: 5em;
+    }
+}
+.car{
+    height: 78vh;
+    width: 45vw;
+    background-color: transparent;
+    position: relative;
+    left: 34em;
+    bottom: 21em;
+}
+@media only screen and (max-width:600px) {
+    .car{
+        position: relative;
+        left: 0.1em;
+        height: 42.5vh;
+        width: 84vw;
+        top: 4em;
+    }
+}
+.car >img{
+    width: 44vw;
+    height: 84vh;
+    opacity: 0.4;
+}
+@media only screen and (max-width:600px) {
+    .car >img{
+        position: relative;
+        width: 80vw;
+        height: 42vh;
+    }
+}
+
+.part3{
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    display: flex;
+}
+.line3{
+   height: 50vh;
+   width: 0.1vw;
+   background-color: white;
+   position: relative;
+   top: 4em;
+   left: 5em;
+}
+@media only screen and (max-width:600px) {
+    .line3{
+       height: 36vh;
+       position: relative;
+       left: 2.3em;
+    }
+    
+}
+.line4{
+    height: 40vh;
+    width: 0.3vw;
+    background-color: black;
+    position: relative;
+    top: 6.9em;
+    border-top-right-radius: 5em;
+}
+@media only screen and (max-width:600px) {
+    .line4{
+       height: 23vh;
+       width: 0.7vw;
+       top: 4em;
+    } 
+}
+.services{
+    height: 61vh;
+    width: 23vw;
+    background-color: transparent;
+    position: relative;
+    left: 8.5em;
+    top: 4em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+@media  only screen and (max-width:600px) {
+    .services{
+        position: relative;
+        left: 4em;
+        width: 140vw;
+        height: 38vh;
+    }
+}
+.services::-webkit-scrollbar{
+    display: none;
+}
+.services1{
+    height: 61vh;
+    width: 23vw;
+    background-color: #dadada;
+    position: relative;
+}
+@media  only screen and (max-width:600px) {
+    .services1{
+        width: 75vw;
+        height: 38vh;
+    }
+}
+
+.services1 >h1{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    
+}
+@media  only screen and (max-width:600px) {
+    .services1 >h1{
+        font-size: 0.9em;
+    }
+}
+.services1 >p{
+    position: relative;
+    top: 2.5em;
+    font-size: 1.7em;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+@media  only screen and (max-width:600px) {
+    .services1 >p{
+        font-size: 1.3em;
+        line-height: 1.4em;
+        top: 1.5em;
+    }
+}
+
+.services1 >i{
+    position: relative;
+    top: 2.5em;
+    left: 5em;
+    font-size: 2.5em;
+    color: red;
+}
+@media  only screen and (max-width:600px) {
+    .services1 >i{
+        position: relative;
+        top: 1.2em;
+        font-size: 2em;
+    }
+}
+
+.services1 >button{
+    position: relative;
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    top: 5.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: rgb(0, 115, 255);
+    color: white;
+}
+@media  only screen and (max-width:600px) {
+    .services1 >button{
+        position: relative;
+        top: 2em;
+        padding: 0.3em 0.6em;
+    }
+}
+
+.dami_video{
+    height: 59vh;
+    width: 45vw;
+    background-color: transparent;
+    position: relative;
+    left: 17em;
+    top: 4em;
+    box-shadow: 3em 4em 5em black;
+    
+}
+.dami_video >video{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+@media only screen and (max-width:600px) {
+    .dami_video{
+        height: 35vh;
+        width: 98vw;
+        position: relative;
+        top: 17.5em;
+        left: -7.9em;
+        box-shadow: 2em 1em 4em black;
+    }
+}
+.part4{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-color: white;
+    display: flex;
+}
+@media only screen and (max-width:600px){
+    .part4{
+        flex-direction: column;
+    }
+}
+.driving{
+    height: 85vh;
+    width: 29vw;
+    background-color: transparent;
+    position: relative;
+    left: 8em;
+    top: 3em;
+}
+@media only screen and (max-width:600px){
+    .driving{
+        height: 48vh;
+        width: 89vw;
+        position: relative;
+        left: 2em;
+        top: 1em;
+    }
+}
+.driving >h1{
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 500;
+    word-spacing: 0.5em;
+    line-height: 1.3em;
+}
+@media only screen and (max-width:600px){
+    .driving >h1{
+       font-size: 1em;
+       word-spacing: 9em;
+    }
+}
+.driving >p{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    position: relative;
+    top: 2.4em;
+    line-height: 1.5em;
+}
+@media only screen and (max-width:600px){
+    .driving >p{
+       font-size: 0.8em;
+       position: relative;
+       top: 1em;
+    }
+}
+.driving > a >button{
+    padding: 0.7em 0.9em;
+    position: relative;
+    font-family: sans-serif;
+    top: 5.6em;
+    left: 9.4em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid transparent;
+    background-color: rgb(0, 115, 255);
+    color: white;
+    transition: all 1s;
+
+}
+@media only screen and (max-width:600px){
+    .driving >a >button{
+       position: relative;
+       top: 0.8em;
+       left: 8.8em;
+    }
+}
+.driving > a >button:hover{
+    background-color: black;
+}
+.discribe{
+    height: 85vh;
+    width: 45vw;
+    background-color: transparent;
+    position: relative;
+    left: 18em;
+    top: 3em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+@media only screen and (max-width:600px){
+    .discribe{
+       position: relative;
+       height: 40vh;
+       width: 89vw;
+       left: 2em;
+       top: 2em;
+       
+    }
+}
+.discribe >img{
+    height: 85vh;
+    width: 45vw;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+@media only screen and (max-width:600px){
+    .discribe >img{
+       position: relative;
+       height: 40vh;
+       width: 89vw;
+       
+       
+    }
+}
+.part5{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+@media only screen and (max-width:600px){
+    .part5{
+        flex-direction: column;
+    }
+}
+.circle2{
+    height: 72vh;
+    width: 39vw;
+    background-color: transparent;
+    position: relative;
+    top: 4em;   
+}
+@media only screen and (max-width:600px){
+    .circle2{
+        height: 40vh;
+        width: 85vw;
+        position: relative;
+        top: 1.5em;
+        left: 1.5em;
+    }
+}
+
+.circle2 >img{
+    height: 72vh;
+    width: 39vw;
+}
+@media only screen and (max-width:600px){
+    .circle2 >img{
+        height: 40vh;
+        width: 85vw;
+    }
+}
+.real{
+    height: 70vh;
+    width: 28vw;
+    background-color: transparent;
+    position: relative;
+    left: 13em;
+    top: 5em;
+}
+@media only screen and (max-width:600px){
+    .real{
+        height: 50vh;
+        width: 89vw;
+        position: relative;
+        left: 1em;
+        top: 2.5em;
+    }
+}
+.real >h1{
+    font-size: 1.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+@media only screen and (max-width:600px){
+    .real>h1{
+        font-size: 1.4em;
+         word-spacing: 0.1em;
+    }
+}
+.real >p{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+    position: relative;
+    top: 2em;
+}
+@media only screen and (max-width:600px){
+    .real>p{
+        font-size: 0.7em;
+        position: relative;
+        top: 1.5em;
+        line-height: 1.3em;
+    }
+}
+
+.real > a >button{
+    padding: 0.7em 1.4em;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.648);
+    background-color: white;
+    color: rgba(0, 0, 0, 0.628);
+    top: 3.8em;
+}
+@media only screen and (max-width:600px){
+    .real>a >button{
+        padding: 0.6em 1.3em;
+        font-size: 0.8em;
+        position: relative;
+        top: 1em;
+        left: 9em;
+        
+    }
+}
+
+.part6{
+    height: 100%;
+    width: 100%;
+    background-image: url(autonogirl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.overlap{
+    height: 77vh;
+    width: 28vw;
+    background-color: black;
+    position: relative;
+    left: 3em;
+    top: 3em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    display: flex;
+    opacity: 0.5;
+}
+@media only screen and (max-width:600px){
+    .overlap{
+        width: 83vw;
+        position: relative;
+        top: 2.5em;
+    }
+}
+.vertical{
+    height: 55vh;
+    width: 0.1vw;
+    background-color: rgb(201, 186, 186);
+    position: relative;
+    left: 1em;
+    top: 2.5em;
+}
+@media only screen and (max-width:600px){
+    .vertical{
+        height: 61vh;
+    }
+}
+.vertical2{
+    height: 20vh;
+    width: 0.2vw;
+    background-color: white;
+    position: relative;
+    top: 3em;
+    
+}
+.autopilot{
+    height: 60vh;
+    width: 22vw;
+    background-color: transparent;
+    position: relative;
+    left: 3.6em;
+    top: 2.5em;
+}
+@media only screen and (max-width:600px){
+    .autopilot{
+        width: 70vw;
+        position: relative;
+        left: 2.5em;
+        height: 63vh;
+    }
+}
+.autopilot >h1{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.autopilot >p{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 2em;
+    line-height: 1.5em;
+    color: white;
+}
+.autopilot >a >button{
+    padding: 0.7em 1.2em;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    top: 5em;
+}
+@media only screen and (max-width:600px){
+    .autopilot >a >button{
+        position: relative;
+        top: 2.9em;
+    }
+}
+
+.part7{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+}
+.vertical3{
+    height: 55vh;
+    width: 0.1vw;
+    background-color: rgb(160, 156, 156);
+    position: relative;
+    top: 5em;
+    left: 5em;
+}
+@media only screen and (max-width:600px) {
+    .vertical3{
+        position: relative;
+        left: 2em;
+        top: 1em;
+        height: 45vh;
+    }
+}
+.vertical4{
+    height: 24vh;
+    width: 0.2vw;
+    background-color: white;
+    position: relative;
+    top: 4em;
+}
+@media only screen and (max-width:600px) {
+    .vertical4{
+        position: relative;
+        top: 1.9em;
+        width: 0.6vw;
+        height: 30vh;
+    }
+}
+.career{
+    height: 80vh;
+    width: 85vw;
+    background-color: transparent;
+    position: relative;
+    bottom: 17em;
+    left: 8em;
+    display: flex;
+}
+@media only screen and (max-width:600px) {
+    .career{
+        position: relative;
+        bottom: 12.5em;
+        left: 3.8em;
+        flex-direction: column;
+        width: 83vw;
+        height: 98vh;
+        
+    }
+}
+.career2{
+    height: 57vh;
+    width: 25vw;
+    background-color: black;
+    position: relative;
+    top: 2.6em;
+}
+@media only screen and (max-width:600px) {
+    .career2{
+        position: relative;
+       top: 0.3em;
+       width: 80vw;
+       height: 48vh;
+        
+    }
+}
+.career2 >h1{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .career2 >h1{
+       font-size: 1em;
+        
+    }
+}
+.career2 >p{
+    font-size: 1.7em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 1.8em;
+    line-height: 1.4em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .career2 >p{
+       font-size: 1.5em;
+       position: relative;
+       top: 0.9em;
+        
+    }
+}
+.career2 >button{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    padding: 0.6em 1.2em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    top: 6.3em;
+}
+@media only screen and (max-width:600px) {
+    .career2 >button{
+       font-size: 0.8em;
+       position: relative;
+       top: 3em;
+        
+    }
+}
+.frontend{
+    height: 79vh;
+    width: 25vw;
+    background-color: black;
+    position: relative;
+    left: 19em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid white;
+}
+@media only screen and (max-width:600px) {
+    .frontend{
+        position: relative;
+        left: 0.1em;
+        width: 82vw;
+        height: 46vh;
+        top: 1em;
+    
+        
+    }
+}
+.frontend >h1{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 1.4em;
+    top: 0.3em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .frontend >h1{
+        position: relative;
+       font-size: 1em;
+    }
+}
+.frontend >h2{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 2.5em;
+    left: 1.6em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .frontend >h2{
+        position: relative;
+       font-size: 0.9em;
+       top: 1.3em;
+    }
+}
+.frontend >p{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 2.8em;
+    left: 0.4em;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    padding: 1.2em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .frontend >p{
+        position: relative;
+       font-size: 0.7em;
+       top: 1em;
+    }
+}
+.frontend >button{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    padding: 0.6em 1.2em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    top: 3em;
+    left: 1.5em;
+}
+@media only screen and (max-width:600px) {
+    .frontend >button{
+        position: relative;
+       font-size: 0.8;
+       padding: 0.5em 1em;
+       top: -1.8em;
+       left: 6.3em;
+    }
+}
+.frontend >i{
+    font-size: 2.4em;
+    position: relative;
+    top: 2.7em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .frontend >i{
+        position: relative;
+       font-size: 2em;
+       top: -0.7em;
+       left: 3em;
+    }
+}
+.part8{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.logo{
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    left: 5em;
+    top: 2em;
+    display: flex;
+
+}
+@media only screen and (max-width:600px) {
+    .logo{
+        position: relative;
+        left: 2em;
+        flex-direction: column;
+    }
+}
+.logo2{
+    height: 37vh;
+    width: 28vw;
+    background-color: transparent;
+    position: relative;
+    top: 5em;
+}
+@media only screen and (max-width:600px) {
+    .logo2{
+        position: relative;
+        top: 2em;
+        width: 87vw;
+    }
+}
+.logo2 >h1{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0.2em;
+}
+@media only screen and (max-width:600px) {
+    .logo2 >h1{
+        font-size: 1.1em;
+    }
+}
+.logo2 >h2{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    word-spacing: 5em;
+    position: relative;
+    top: 3em;
+}
+@media only screen and (max-width:600px) {
+    .logo2 >h2{
+        position: relative;
+        top: 1.8em;
+        word-spacing: 4em;
+    }
+}
+.logo2 >h3{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    word-spacing: 6.5em;
+    position: relative;
+    top: 4.5em;
+}
+@media only screen and (max-width:600px) {
+    .logo2 >h3{
+        position: relative;
+        top: 2.6em;
+        word-spacing: 5.5em;
+    }
+}
+.logo2 >h4{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    position: relative;
+    top: 6.7em;
+}
+@media only screen and (max-width:600px) {
+    .logo2 >h4{
+        position: relative;
+        top: 4em;
+    }
+}
+.subscribe{
+    height: 34vh;
+    width: 22vw;
+    position: relative;
+    top: 8.3em;
+    left: 10em;
+}
+@media only screen and (max-width:600px) {
+    .subscribe{
+        position: relative;
+        top: 4em;
+        left: 0.1em;
+        width: 87vw;
+    }
+}
+.subscribe >h1{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+@media only screen and (max-width:600px) {
+    .subscribe >h1{
+        font-size: 1em;
+    }
+}
+.subscribe >h2{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 2.3em;
+}
+@media only screen and (max-width:600px) {
+    .subscribe >h2{
+        position: relative;
+        top: 1.9em;
+    }
+}
+.subscribe >h3{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 4.8em;
+}
+@media only screen and (max-width:600px) {
+    .subscribe >h3{
+        position: relative;
+        top: 3.3em;
+    }
+}
+.subscribe > input{
+    position: relative;
+    top: 7em;
+    padding: 0.7em 1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border: 1px solid rgb(159, 149, 149);
+}
+@media only screen and (max-width:600px) {
+    .subscribe > input{
+        position: relative;
+        top: 4em;
+        padding: 0.6em 0.9em;
+    }
+}
+.subscribe > button{
+    position: relative;
+    top: 7em;
+    padding: 0.7em 1em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 1px solid rgb(159, 149, 149);
+    background-color: black;
+    right: 0.3em;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    .subscribe > button{
+        position: relative;
+        top: 4em;
+        padding: 0.6em 0.9em;
+    }
+}
